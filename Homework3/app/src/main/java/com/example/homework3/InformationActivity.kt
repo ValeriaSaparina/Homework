@@ -23,8 +23,7 @@ class InformationActivity : AppCompatActivity() {
         val glide = Glide.with(this)
         binding?.run {
             glide.load(planet.url).into(ivImage)
-            val info = "Description: " + planet.desc + "\n" + "Type: " + planet.type + "\n" +
-                    "Radius: " + planet.radius + "\n" + "Distance from the Sun: " + planet.distFromTheSun
+            val info = "Description: ${planet.desc}\nType: ${planet.type}\nRadius: ${planet.radius}\nDistance from the Sun: ${planet.distFromTheSun}"
             tvInfo.text = info
             tvTitle.text = planet.name
         }
