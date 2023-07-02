@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework1</string>
+    <string name="click_me">Click me</string>
+    <string name="weight">weight</string>
+    <string name="calculate">calculate</string>
+    <string name="height">height</string>
+    <string name="name">name</string>
+    <string name="age">age</string>
+</resources>
