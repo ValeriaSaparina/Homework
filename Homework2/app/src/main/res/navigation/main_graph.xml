@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/placesFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.homework2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.homework2.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/placesFragment"
+        android:name="com.example.homework2.PlacesFragment"
+        android:label="fragment_places"
+        tools:layout="@layout/fragment_places" >
+        <action
+            android:id="@+id/action_placesFragment_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.homework2.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.example.homework2.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_popular" />
+    <fragment
+        android:id="@+id/anotherFragment"
+        android:name="com.example.homework2.AnotherFragment"
+        android:label="fragment_another"
+        tools:layout="@layout/fragment_another" >
+        <action
+            android:id="@+id/action_anotherFragment_to_placesFragment"
+            app:destination="@id/placesFragment" />
+    </fragment>
+</navigation>
